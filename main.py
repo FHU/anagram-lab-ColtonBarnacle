@@ -15,8 +15,7 @@ if __name__ == '__main__':
     #REMOVE PASS YOUR CODE GOES HERE
     word_one = input()
     word_two = input()
-    word_one = word_one.replace(' ', '')
-    word_two = word_two.replace(' ', '')
+    
 
     word_one = word_one.lower()
     word_two = word_two.lower()
