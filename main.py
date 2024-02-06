@@ -5,9 +5,9 @@ def anagram(word_one, word_two):
   
   
     if sorted_word_one == sorted_word_two:
-        return 'True' 
+        return True
     else:
-        return 'False'
+        return False
 
     
 
