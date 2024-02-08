@@ -15,14 +15,14 @@ def check_anagram(word1, word2):
 
 def main():
     # Getting inputs from the user
-    word1 = input("Enter the first word: ")
-    word2 = input("Enter the second word: ")
+    word1 = input()
+    word2 = input()
 
     # Checking if inputs are anagrams
-    result = check_anagram(word1, word2)
+    anagram = check_anagram(word1, word2)
 
     # Displaying the result
-    print(result)
+    print(anagram)
 
 if __name__ == "__main__":
     main()
