@@ -1,23 +1,27 @@
-#REMOVE PASS AND FIX THIS FUNCTION
-def anagram(word_one, word_two):
-    sorted_word_one = sorted(word_one)
-    sorted_word_two = sorted(word_two)
-  
-  
-    if sorted_word_one == sorted_word_two:
-        return True
-    else:
+def check_anagram(word1, word2):
+    # Removing spaces and converting to lowercase
+    word1 = word1.replace(" ", "").lower()
+    word2 = word2.replace(" ", "").lower()
+
+    # If lengths are not equal, they cannot be anagrams
+    if len(word1) != len(word2):
         return False
-
     
+    # Sorting both strings and comparing
+    return sorted(word1) == sorted(word2)
 
-if __name__ == '__main__':
-    #REMOVE PASS YOUR CODE GOES HERE
-    word_one = input()
-    word_two = input()
-    
+def main():
+    # Getting inputs from the user
+    word1 = input("Enter the first word: ")
+    word2 = input("Enter the second word: ")
 
-    word_one = word_one.lower().replace(' ','')
-    word_two = word_two.lower().replace(' ','')
-    print(anagram(word_one, word_two))
+    # Checking if inputs are anagrams
+    result = check_anagram(word1, word2)
+
+    # Displaying the result
+    print(result)
+
+if __name__ == "__main__":
+    main()
+
     
