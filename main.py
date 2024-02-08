@@ -17,7 +17,7 @@ if __name__ == '__main__':
     word_two = input()
     
 
-    word_one = word_one.lower()
-    word_two = word_two.lower()
+    word_one = word_one.lower().replace(' ','')
+    word_two = word_two.lower().replace(' ','')
     print(anagram(word_one, word_two))
     
