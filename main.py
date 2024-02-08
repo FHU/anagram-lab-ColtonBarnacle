@@ -1,4 +1,4 @@
-def check_anagram(word1, word2):
+def anagram(word1, word2):
     if word1.isspace() or word2.isspace():
         return False
    
@@ -18,11 +18,9 @@ def main():
     word1 = input()
     word2 = input()
 
-    # Checking if inputs are anagrams
-    anagram = check_anagram(word1, word2)
 
     # Displaying the result
-    print(anagram)
+    print(anagram(word1,word2))
 
 if __name__ == "__main__":
     main()
