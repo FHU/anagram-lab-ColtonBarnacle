@@ -1,4 +1,7 @@
 def check_anagram(word1, word2):
+    if word1.isspace() or word2.isspace():
+        return False
+   
     # Removing spaces and converting to lowercase
     word1 = word1.replace(" ", "").lower()
     word2 = word2.replace(" ", "").lower()
